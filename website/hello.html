@@ -1,0 +1,151 @@
+<html>
+<head>
+    <title>phoneGap html</title>
+    <link rel="stylesheet" href="css/solarMonitorMobile.css" />
+    <!--  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" /> 
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.js"></script>  
+     -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+</head>
+<body>
+    <div data-role="page" data-theme="a" id="list_view">
+        <div data-role="header" data-theme="a">
+            <a href="#list_view" data-theme ="a">List</a>
+            <h1>Solar Monitor</h1>
+            <a href="#grid_view" data-theme ="a">grid</a>
+            <div data-role = "navbar"> 
+                <ul>
+                    <li><a href="">AR</a></li>
+                    <li><a href="">AR</a></li>
+                    <li><a rel = "external" href="date_selector.html">Date</a></li>
+                    <li><a href="">AR</a></li>
+                    <li><a href="">AR</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview">
+                <li class = "ui-bar-d"><a href="#main_img_1">
+                    <img src="http://solarmonitor.org/data/20110628/pngs/thmb/shmi_maglc_thumb.png" title="sample 1" id = "thumb1"/>
+                    <h3>SHMI</h3>
+                    <p>Description</p>
+                </a></li>
+                <li class = "ui-bar-d"><a href="#main_img_2">
+                    <img src="http://solarmonitor.org/data/20110628/pngs/thmb/saia_04500_thumb.png" title="sample 2"/>
+                    <h3>SAIA</h3>
+                    <p>Description</p>
+                </a></li>
+                <li class = "ui-bar-d"><a href="testing.html">
+                    <img src="http://solarmonitor.org/data/20110628/pngs/thmb/bbso_halph_thumb.png" title="sample 3"/>
+                    <h3>BBSO</h3>
+                    <p>Description</p>
+                </a></li>
+                <li class = "ui-bar-d"><a href="index.html">
+                    <img src="http://solarmonitor.org/data/20110628/pngs/thmb/swap_00174_thumb.png" title="sample 4"/>
+                    <h3>SWAP</h3>
+                    <p>Description</p>
+                </a></li>
+                <li class = "ui-bar-d"><a href="index.html">
+                    <img src="http://solarmonitor.org/data/20110628/pngs/thmb/saia_00193_thumb.png" title="sample 5"/>
+                    <h3>SAIA</h3>
+                    <p>Description</p>
+                </a></li>
+                <li class = "ui-bar-d"><a href="index.html">
+                    <img src="http://solarmonitor.org/data/20110628/pngs/thmb/hxrt_flter_thumb.png" title="sample 6"/>
+                    <h3>HXRT</h3>
+                    <p>Description</p>
+                </a></li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-id = "footer">
+            <h1>&copy; Copyright Info or Site URL</h1>
+        </div>
+    </div>
+
+    <!-- grid version of the home page. 
+/*--------------------------------------------------------------------------------------------------------------------------*/
+    -->
+    <div data-role="page" data-theme="a" id = "grid_view">
+        <div data-role="header" data-theme="a">
+            <a href="#list_view" data-theme ="a">list</a>
+            <h1>Solar Monitor</h1>
+            <a href="#grid_view" data-theme ="a">grid</a>
+        </div>
+                <div data-role="content" data-theme ="a">
+            <div class = "ui-grid-a" >
+                <div class = "ui-block-a" >
+                    <div class = "ui-bar-d  tile">
+                        <a href="#main_img_1">
+                            <img src="http://solarmonitor.org/data/20110628/pngs/thmb/shmi_maglc_thumb.png" title="sample 1" id = "thumb1" class = "main"/>
+                        </a>
+                        <div class ="tile-text">
+                            <span >SHMI</span><br>
+                            Description <!-- i should really have this in a container... -->
+                        </div>
+                    </div>
+                </div>
+                <div class = "ui-block-b"><!-- ui-bar-d  -->
+                    <div class = "ui-bar-d  tile">
+                    <a href="#main_img_2">
+                        <img src="http://solarmonitor.org/data/20110628/pngs/thmb/saia_04500_thumb.png" title="sample 1" id = "thumb1" class = "main"/>
+                    </a>
+                     <div class ="tile-text">
+                            <span >SAIA</span><br>
+                            Description <!-- i should really have this in a container... -->
+                        </div>
+                    </div>
+                </div>
+                <div class = "ui-block-a ">
+                    <div class = "ui-bar-d  tile">
+                    <a href="#main_img_3">
+                        <img src="http://solarmonitor.org/data/20110628/pngs/thmb/bbso_halph_thumb.png" title="sample 1" class = "main"/>
+                    </a>
+                    <div class ="tile-text">
+                            <span >BBSO</span><br>
+                            Description <!-- i should really have this in a container... -->
+                        </div>
+                    </div>
+                </div>
+                <div class = "ui-block-b ">
+                    <div class = "ui-bar-d  tile">
+                    <a href="#main_img_4">
+                        <img src="http://solarmonitor.org/data/20110628/pngs/thmb/swap_00174_thumb.png" title="sample 1" id = "thumb1" class = "main"/>
+                    </a>
+                    <div class ="tile-text">
+                            <span >SWAP</span><br>
+                            Description <!-- i should really have this in a container... -->
+                        </div>
+                    </div>
+                </div>
+                <div class = "ui-block-a ">
+                    <div class = "ui-bar-d  tile">
+                    <a href="#main_img_5">
+                        <img src="http://solarmonitor.org/data/20110628/pngs/thmb/saia_00193_thumb.png" title="sample 1" id = "thumb1" class = "main"/>
+                    </a>
+                    <div class ="tile-text">
+                            <span >SAIA</span><br>
+                            Description <!-- i should really have this in a container... -->
+                        </div>
+                    </div>
+                </div>
+                <div class = "ui-block-b ">
+                    <div class = "ui-bar-d  tile">
+                    <a href="#main_img_6">
+                        <img src="http://solarmonitor.org/data/20110628/pngs/thmb/hxrt_flter_thumb.png" title="sample 1" id = "thumb1" class = "main"/>
+                    </a>
+                    <div class ="tile-text">
+                            <span >HXRT</span><br>
+                            Description <!-- i should really have this in a container... -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+

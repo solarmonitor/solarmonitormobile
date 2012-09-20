@@ -1,0 +1,129 @@
+<?php
+
+//provides a mapping between the position in the list structure and the index of the type of the image to be displayed  
+$list_index_numbers = array
+	(
+	"main" => array
+		(
+		"one"   => array
+			(
+			"shmi_maglc",
+			"smdi_maglc",
+			"gong_maglc"//,
+			//"shmi_maglc"
+			),
+		"two"   => array
+			(
+			"saia_04500"
+			),
+		"three" => array
+			(
+			"bbso_halph"
+			),
+		"four"  => array
+			(
+			"swap_00174",
+			"seit_00171"
+			),
+		"five"  => array
+			(
+			"saia_00193",
+			"seit_00195"
+			),
+		"six"   => array
+			(
+			"hxrt_flter"
+			)
+		),
+	"fs"   => array
+		(
+		"one"   => array
+			(
+			"shmi_maglc",
+			"smdi_maglc",
+			"gong_maglc"//,
+			//"shmi_maglc"
+			),
+		"two"   => array
+			(
+			"slis_chrom"
+			),
+		"three" => array
+			(
+			"gong_farsd"
+			),
+		"four"  => array
+			(
+			"strb_00195"
+			),
+		"five"  => array
+			(
+			"seit_00195"
+			),
+		"six"   => array
+			(
+			"stra_00195"
+			),
+		),
+	"sw"   => array
+		(
+		"one"   => array
+			(
+			"shmi_maglc",
+			"smdi_maglc",
+			"gong_maglc"//,
+			//"shmi_maglc"
+			),
+		"two"   => array
+			(
+			"saia_00094"
+			),
+		"three" => array
+			(
+			"saia_00131"
+			),
+		"four"  => array
+			(
+			"saia_00171"
+			),
+		"five"  => array
+			(
+			"saia_00193"
+			),
+		"six"   => array
+			(
+			"saia_00211"
+			),
+		),
+	"lw"   => array
+		(
+		"one"   => array
+			(
+			"shmi_maglc",
+			"smdi_maglc",
+			"gong_maglc"//,
+			//"shmi_maglc"
+			),
+		"two"   => array
+			(
+			"saia_00304"
+			),
+		"three" => array
+			(
+			"saia_00335"
+			),
+		"four"  => array
+			(
+			"saia_01600"
+			),
+		"five"  => array
+			(
+			"saia_01700"
+			),
+		"six"   => array
+			(
+			"saia_04500"
+			)
+		)
+	);
+?>
