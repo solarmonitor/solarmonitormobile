@@ -56,11 +56,11 @@
 		}
 
 		//	open the dir if it exists
-		$dir = "${arm_data_path}data/$date/$folder/$instr";
+		$dir = "${arm_data_path}data/".slashed_date($date)."/$folder/$instr";
 		//modified Iain Billett 2011 - july
 		//A dirty rotten hack to allow for this to return thumbnails I'll think of somthing more elegant later.
 		if($fd_ar=='thmb'){
-			$dir = "${arm_data_path}data/$date/$folder/$fd_ar/";
+			$dir = "${arm_data_path}data/".slashed_date($date)."/$folder/$fd_ar/";
 			switch ($thumb_type) {
 				case 'full':
 					return $dir.$instrument.'_'.$filter.'_thumb.png';
@@ -73,7 +73,7 @@
 		}
 		//return the arm_ar_summary for today
         	if($fd_ar=='ar' && $folder=='meta'){
-            		$dir = "${arm_data_path}data/$date/$folder/arm_ar_summary_$date.txt";
+            		$dir = "${arm_data_path}data/".slashed_date($date)."/$folder/arm_ar_summary_$date.txt";
             		if(file_exists($dir)){
                 		return $dir;
             		}else{
@@ -193,7 +193,7 @@
 		//list($instr, $chart) = explode('_',$type);
 		$folder = $charts[$type]['folder'];
 		$file = $charts[$type]['file'].'_'.$date.$charts[$type]['ext'];
-		return "${arm_data_path}data/$date/pngs/$folder/$file";
+		return "${arm_data_path}data/".slashed_date($date)."/pngs/$folder/$file";
 		
 	}
 /**
@@ -327,7 +327,7 @@
 	function get_ar_thumbs($date,$region){
 		include('globals.php');
 		$thumbs = array();
-		$path = "${arm_data_path}data/$date/pngs/";
+		$path = "${arm_data_path}data/".slashed_date($date)."/pngs/";
 		foreach ($png_folders as $folder) {
 			$dir = $path.$folder;
 			if(is_dir($dir)){
@@ -356,8 +356,7 @@
 		//var_dump($instrument_groups);
 		var_dump($arm_data_path);
 		$imgs = array();
-//		$path = "${arm_data_path}data/$date/pngs/";
-		$path = "${arm_data_path}data/".$date."/pngs/";
+		$path = "${arm_data_path}data/".slashed_date($date)."/pngs/";
 		list($folder,$dontcare) = explode('_',$type);
 		$dir = $path.$folder.'/';
 		$handle = opendir($dir);
@@ -394,7 +393,7 @@
 	
 	function get_forecast_data($date){
 		include('globals.php');
-		$path = "${arm_data_path}data/$date/meta/arm_forecast_".$date.".txt";
+		$path = "${arm_data_path}data/".slashed_date($date)."/meta/arm_forecast_".$date.".txt";
 		$lines = file($path);
 		$data = array();
 		foreach ($lines as $line) {
@@ -403,6 +402,11 @@
 		}
 		return $data;
 	}	
+
+        function slashed_date($date){
+            $slashed_date = substr($date,0,4).'/'.substr($date,4,2).'/'.substr($date,6,2);
+            return $slashed_date;
+        }
 ?>
 
 

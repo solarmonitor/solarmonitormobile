@@ -23,7 +23,7 @@ $classes = array('a','b','c','d');
 $i = 0;
 foreach ($thumbs as $instr => $file) {
 	list($folder,$dontcare) = explode('_',$instr,2);
-	$path = "{$arm_data_path}data/$date/pngs/".$folder.'/'.$file;
+	$path = "{$arm_data_path}data/".slashed_date($date)."/pngs/".$folder.'/'.$file;
 	$content = $content.'
 		<div class="ui-block-'.$classes[$i].'">
 			<a rel="external" href="ar_page.php?date='.$date.'&type='.$instr.'&region='.$region.'">
