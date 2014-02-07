@@ -47,6 +47,7 @@
 		//2011 mobile site arrays : should contain all instruments past and present
 		$instrument_names = array(
 			"shmi_maglc" => "HMI Mag",//main
+			"chmi_06173" => "HMI 6173&#197",
 			"smdi_maglc" => "MDI Mag",
 			"smdi_igram" => "MDI Cont",
 			"gong_maglc" => "GONG Mag",
@@ -62,7 +63,7 @@
 			"saia_00211" => "AIA 211&#197",
 			"saia_00304" => "AIA 304&#197",
 			"saia_00335" => "AIA 355&#197",
-			"saia_01600" => "AIA 1600&#197g",
+			"saia_01600" => "AIA 1600&#197",
 			"saia_01700" => "AIA 1700&#197",
 			"saia_04500" => "AIA 4500&#197",
 			"gong_farsd" => "GONG Farside",//farside
@@ -74,6 +75,7 @@
 
 		$instrument_types = array(
 			"shmi_maglc",//main
+			"chmi_06173",
 			"smdi_maglc",
 			"smdi_igram",
 			"gong_maglc",
@@ -138,6 +140,7 @@
 	$png_folders = array(
 		'bbso',
 		'shmi',
+		'chmi',
 		'smdi',
 		'stra',
 		'strb',
