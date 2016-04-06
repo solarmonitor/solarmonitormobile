@@ -20,9 +20,9 @@ echo'
     <title>Solar Monitor</title>
     <link rel="stylesheet" href="css/solarMonitorMobile.css" />
     <link rel="stylesheet"  href="jquery.mobile.scrollview.css" /> 
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.css" />
-    <script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.css" />
+    <script src="https://code.jquery.com/jquery-1.6.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.js"></script>
     <link href="css/jquery.scroller-1.0.1.css" rel="stylesheet" type="text/css" />
     <script src="js/jquery.scroller-1.0.1.min.js" type="text/javascript"></script>
     <meta name = "viewport" content = "width=device-width, initial-scale=1">
@@ -170,9 +170,9 @@ function print_content_footer(){
 		<a class="addthis_button_compact"></a>
 		<a class="addthis_counter addthis_bubble_style"></a>
 		-->
-		<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=xa-4e527176710209c0"><img src="http://s7.addthis.com/static/btn/sm-share-en.gif" width="83" height="16" alt="Bookmark and Share" style="border:0"/></a>
+		<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=xa-4e527176710209c0"><img src="https://s7.addthis.com/static/btn/sm-share-en.gif" width="83" height="16" alt="Bookmark and Share" style="border:0"/></a>
 		</div>
-		<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e3bfbcb65434435"></script>
+		<script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e3bfbcb65434435"></script>
 		<!-- AddThis Button END -->
 	</div>
 	<!-- Piwik 
@@ -228,7 +228,7 @@ $HTML =  '
         <a class="addthis_counter addthis_bubble_style"></a>
         <a class="addthis_button_google_plusone"></a>
         </div>
-        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e3bfbcb65434435"></script>
+        <script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e3bfbcb65434435"></script>
         <!-- AddThis Button END -->
 </div>
 ';

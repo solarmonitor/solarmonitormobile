@@ -12,14 +12,14 @@ print('
 <head>
     <title>phoneGap html</title>
     <link rel="stylesheet" href="css/solarMonitorMobile.css" />
-    <!--  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" /> 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.js"></script>  
+    <!--  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" /> 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.js"></script>  
      -->
      <link rel="stylesheet"  href="jquery.mobile.scrollview.css" /> 
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.css" />
-    <script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.css" />
+    <script src="https://code.jquery.com/jquery-1.6.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.js"></script>
  
 </head>
 <body>
