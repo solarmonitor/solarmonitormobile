@@ -111,6 +111,11 @@
 						{
 							list($file_date, $file_time, $rest) = split('[_.]', $rest, 3);	
 						}
+						//	if it is a ch and we want a ch, parse the rest of the filename
+						elseif (($fd_ar_type == "ch") && ($fd_ar == "ch"))
+						{
+							list($file_date, $file_time, $rest) = split('[_.]', $rest, 3);	
+						}
 						//	if it is an ar and we want an ar parse the rest of the filename
 						elseif (($fd_ar_type == "ar") && ($fd_ar == "ar"))
 						{

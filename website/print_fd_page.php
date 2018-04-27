@@ -8,7 +8,16 @@ include_once('jqm_page_template.php');
 //	$all_img_paths = find_latest_file($date,$inst,$filter,"png","fd",NULL,"all");
 	//var_dump($all_img_paths);
 //	$img_path= find_latest_file($date,$inst,$filter,"png","thmb",NULL,"latest","full");
+
+	if ($filter != "chimr")
+	{
 	$img_path= find_latest_file($date,$inst,$filter,"png","fd");
+	}
+	else
+	{
+	$img_path= find_latest_file($date,$inst,$filter,"png","ch");
+	}
+	
 	$latest_index=0;
 	//could just assume lasest index is count(all imgs) -1 => last in array
 	for ($i = 0; $i < count($all_img_paths); $i++) {

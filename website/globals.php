@@ -98,6 +98,7 @@
 			"slis_chrom",
 			"strb_00195",
 			"stra_00195",
+			"saia_chimr",
 		);
 		$charts = array(
 			'xrays'=>array(
